@@ -2,11 +2,36 @@
 
 <head>
   <script src="main.js"> </script>
+  <style>
+  th, td {
+    border: 1px solid black;
+    padding:5px;
+  }
+  table {
+    font-family: Palatino;
+    font-size: 25px;
+    border-collapse: collapse;
+    width: 75%;
+    page-break-before: always;
+    page-break-after: always;
+    margin: 10px;
+  }
+  </style>
 </head>
 
 <body>
 
-  test
+  Start: <input type="text" id="start" value="1.0" size="6" />
+  Increment: <input type="text" id="increment" value="0.1" size="6" />
+  Rows Per Table: <input type="text" id="rows" value="10" size="6" />
+  Number of Tables: <input type="text" id="numTables" value="9" size="6" />
+  <input type="button" value="Generate" onclick="generate()" />
+
+  <h1> Unfilled Tables </h1>
+  <div id = "unfilled"> </div>
+
+  <h1> Filled Tables </h1>
+  <div id = "filled"> </div>
 
 </body>
 

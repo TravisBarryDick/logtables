@@ -20,16 +20,4 @@ export class Array2D {
   fill(value) {
     this.data.fill(value)
   }
-
-  toString(precision) {
-    let result = '';
-    for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) {
-        result += this.get(i, j).toFixed(precision);
-        result += ' ';
-      }
-      result += '\n';
-    }
-    return result;
-  }
 }
