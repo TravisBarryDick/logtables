@@ -31,7 +31,7 @@ export class DifferenceTable {
       row.insertCell().innerHTML = (this.x + this.dx * i).toFixed(this.x_precision)
       for (let j = 0; j < this.cols; j++) {
         let cell = row.insertCell();
-        if (filled || i == 0) {
+        if (filled || i == 0 || j == this.cols - 1) {
           cell.innerHTML = this.table.get(i,j).toFixed(this.entry_precision);
         } else {
           cell.innerHTML = "&nbsp;";
